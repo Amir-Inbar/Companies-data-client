@@ -11,7 +11,7 @@ export const companyService = {
 
 const PORT = 3030
 // const BASE_URL = process.env.NODE_ENV === 'production' ? `/company` : `http://localhost:${PORT}/company/`
-const BASE_URL = "/db.json/company"
+const BASE_URL = "https://api.npoint.io/4df0fbe9a2bcc47ad2a5/company"
 
 async function query() {
   const { data: company } = await axios.get(BASE_URL)
