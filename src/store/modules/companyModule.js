@@ -57,12 +57,12 @@ export const companyModule = {
     },
   },
   actions: {
-    async loadcompanies({ commit }) {
+    async loadCompanies({ commit }) {
       const companies = await companyService.query()
       commit({ type: 'setCompanies', companies })
     },
-    async removecompany({ commit }, { companyId }) {
-      await companyService.removecompany(companyId)
+    async removeCompany({ commit }, { companyId }) {
+      await companyService.removeCompany(companyId)
       commit({ type: 'removeCompany', companyId })
     },
     async setFilter({ commit }, { filterBy }) {

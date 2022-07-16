@@ -1,47 +1,37 @@
-import axios from 'axios'
+import { company } from '../../data/db.json'
+import { storageService } from './async-storage-service'
+import { loadFromStorage, saveToStorage } from './util.service'
 
 export const companyService = {
   query,
   getById,
-  addcompany,
-  updatecompany,
-  removecompany,
+  removeCompany,
   getCompanyLogo,
 }
-
-const PORT = 3030
-// const BASE_URL = process.env.NODE_ENV === 'production' ? `/company` : `http://localhost:${PORT}/company/`
-const BASE_URL = "https://api.npoint.io/4df0fbe9a2bcc47ad2a5/company"
+const COMPANIES_KEY = 'companies'
+_createCompanies()
 
 async function query() {
-  const { data: company } = await axios.get(BASE_URL)
-  return company
+  return storageService.query(COMPANIES_KEY)
 }
 
 async function getById(companyId) {
-  const { data: company } = await axios.get(BASE_URL + companyId)
-  return company
+  return storageService.get(COMPANIES_KEY, companyId)
 }
 
-async function addcompany(content) {
-  const newcompany = {
-    content,
-    isDone: false,
-  }
-  const { data: company } = await axios.post(BASE_URL, newcompany)
-  return company
-}
-
-async function updatecompany(updatedcompany) {
-  updatedcompany.isDone = !updatedcompany.isDone
-  const { data: company } = await axios.put(BASE_URL + updatedcompany.id, updatedcompany)
-  return company
-}
-
-async function removecompany(companyId) {
-  await axios.delete(BASE_URL + companyId)
+async function removeCompany(companyId) {
+  return storageService.remove(COMPANIES_KEY, companyId)
 }
 
 async function getCompanyLogo(companyWeb) {
   return await `https://logo.uplead.com/${companyWeb}`
+}
+
+function _createCompanies() {
+  let companies = loadFromStorage(COMPANIES_KEY)
+  if (!companies || !companies.length) {
+    companies = company
+    saveToStorage(COMPANIES_KEY, companies)
+  }
+  return companies
 }

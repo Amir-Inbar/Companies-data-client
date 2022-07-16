@@ -19,7 +19,7 @@ import CompanyFilter from '../components/CompanyFilter.vue'
 export default {
   name: 'companyPage',
   created() {
-    this.$store.dispatch({ type: 'loadcompanies' })
+    this.$store.dispatch({ type: 'loadCompanies' })
   },
   data() {
     return {
@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     onDeletecompany(companyId) {
-      this.$store.dispatch({ type: 'removecompany', companyId })
+      this.$store.dispatch({ type: 'removeCompany', companyId })
     },
     onChooseCompany(company) {
       this.selectedCompany = company

@@ -32,15 +32,11 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 # Clone this repository
 $ git clone https://github.com/Amir-Inbar/Companies-data-client.git
 
-Open a terminal and execute this code:
-# npm install -g json-server
-$ json-server --watch .\data\db.json --port 3030
+# Install dependencies
+$ npm install
 
-Open another terminal and execute this code:
-# npm i
+# Run the app
 $ npm run dev
-```
 
 ## Contact
-
 - GitHub [@Amir-Inbar](https://github.com/Amir-Inbar})
