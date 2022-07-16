@@ -39,4 +39,4 @@ $ npm install
 $ npm run dev
 
 ## Contact
-- GitHub [@Amir-Inbar](https://github.com/Amir-Inbar})
+- GitHub [@Amir-Inbar](https://github.com/Amir-Inbar)
