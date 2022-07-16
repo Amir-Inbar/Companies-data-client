@@ -37,6 +37,8 @@ $ npm install
 
 # Run the app
 $ npm run dev
+```
+
 
 ## Contact
 - GitHub [@Amir-Inbar](https://{github.com/Amir-Inbar})
