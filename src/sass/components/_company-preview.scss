@@ -1,0 +1,13 @@
+.company-preview {
+  background-color: #fff;
+  padding: 1em 2em;
+
+  border: 1px solid $gray-400;
+  border-radius: 4px;
+  transition: $transition;
+
+  &:hover {
+    border-color: $gray-900;
+    cursor: pointer;
+  }
+}

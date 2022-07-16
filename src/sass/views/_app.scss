@@ -1,0 +1,20 @@
+body {
+  background: $gray-50;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+.main-content {
+  @include for-lg-layout {
+    flex-direction: row;
+    .dashboard {
+      order: -1;
+    }
+  }
+  flex-direction: column;
+  .dashboard {
+    order: 1;
+  }
+}

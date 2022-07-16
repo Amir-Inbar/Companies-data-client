@@ -1,0 +1,19 @@
+.dashboard {
+  min-height: 100%;
+  text-align: center;
+  position: relative;
+  border: 1px solid gray;
+  padding: 10px;
+  &--title {
+    width: 60px;
+    display: flex;
+    background: none;
+    transform-origin: 6 -1;
+    transform: rotate(-90deg);
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    white-space: nowrap;
+  }
+}

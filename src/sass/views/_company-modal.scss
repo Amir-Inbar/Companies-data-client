@@ -1,0 +1,85 @@
+.company-modal {
+  backdrop-filter: blur(1px);
+  inset: 0;
+  position: fixed;
+
+  .dialog {
+    &--backdrop {
+      height: 80vh;
+      max-height: calc(100% - 96px);
+      width: calc(100% - 96px);
+      max-width: 800px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      align-items: center;
+      background-color: #fffbf8;
+      box-shadow: 0 0 16px 0 rgb(0 0 0 / 50%);
+      flex-direction: column;
+      border-radius: 16px;
+    }
+
+    &--details {
+      height: 100%;
+      width: 100%;
+
+      header {
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        color: #fffbf8;
+        font-size: 24px;
+        padding-block-end: 8px;
+        height: 96px;
+        position: relative;
+        text-align: center;
+        background-color: rgb(49, 57, 85);
+
+        i {
+          border: 0;
+          position: absolute;
+          right: 8px;
+          top: 8px;
+          width: 24px;
+          cursor: pointer;
+        }
+      }
+
+      main {
+        height: 100%;
+        padding: 15px;
+        font-size: 18px;
+        .content-key {
+          font-weight: 800;
+          &::first-letter {
+            text-transform: uppercase;
+          }
+        }
+
+        .summary {
+          &--title {
+            font-weight: 800;
+            &::first-letter {
+              text-transform: uppercase;
+            }
+          }
+          &--content {
+            text-align: left;
+            line-height: 24px;
+
+            &::first-letter {
+              text-transform: uppercase;
+            }
+          }
+        }
+        .profile{
+          &--logo{
+            mix-blend-mode: multiply;
+            height: 50px;
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+}
