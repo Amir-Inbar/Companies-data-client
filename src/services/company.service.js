@@ -10,7 +10,8 @@ export const companyService = {
 }
 
 const PORT = 3030
-const BASE_URL = process.env.NODE_ENV === 'production' ? `/company` : `http://localhost:${PORT}/company/`
+// const BASE_URL = process.env.NODE_ENV === 'production' ? `/company` : `http://localhost:${PORT}/company/`
+const BASE_URL = "/db.json/company"
 
 async function query() {
   const { data: company } = await axios.get(BASE_URL)
