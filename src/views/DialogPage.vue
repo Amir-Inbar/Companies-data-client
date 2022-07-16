@@ -7,7 +7,7 @@
           <div>{{ company.name }}</div>
         </header>
         <main class="flex column space-between">
-          <div class="flex justify-center">
+          <div class="flex justify-center wrap py-2">
             <span
               v-for="(content, key, idx) in getMainContent"
               class="flex column"

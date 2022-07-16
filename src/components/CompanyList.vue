@@ -1,5 +1,5 @@
 <template>
-  <section class="company-list flex column flex-wrap gap-1 p-2 full-grow">
+  <section class="company-list flex column flex-wrap gap-1 full-grow">
     <CompanyPreview
       v-for="company in companies"
       :key="company.id"

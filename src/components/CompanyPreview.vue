@@ -1,7 +1,7 @@
 <template>
   <article class="company-preview flex space-between gap-2">
     <h3>{{ company.name }}</h3>
-    <div class="flex gap-2">
+    <div class="btn-preview flex gap-2">
       <button @click.stop="$router.push(`/company/${company.id}`)" class="btn btn-primary">Details</button>
       <button @click.stop="onDeletecompany" class="btn btn-danger">Delete</button>
     </div>

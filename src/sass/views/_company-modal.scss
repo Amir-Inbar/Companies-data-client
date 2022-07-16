@@ -18,6 +18,29 @@
       box-shadow: 0 0 16px 0 rgb(0 0 0 / 50%);
       flex-direction: column;
       border-radius: 16px;
+      overflow-y: scroll;
+
+      @include for-sm-layout {
+        overflow: hidden;
+      }
+
+&::-webkit-scrollbar-track  {
+  // background-color: #aaa;
+  // border-bottom-left-radius: 10px;
+  // border-bottom-right-radius: 10px;
+  // background-image: -webkit-linear-gradient(
+  //   90deg,
+  //   rgba(0, 0, 0, 0.2) 25%,
+  //   transparent 25%,
+  //   transparent 50%,
+  //   rgba(0, 0, 0, 0.2) 50%,
+  //   rgba(0, 0, 0, 0.2) 75%,
+  //   transparent 75%,
+  //   transparent
+  // );
+  margin-block-start: 5px;
+}
+
     }
 
     &--details {

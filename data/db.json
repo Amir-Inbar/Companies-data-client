@@ -55,7 +55,7 @@
       "isDone": false
     },
     {
-      "name": "microsoft",
+      "name": "micro",
       "employee_count": 244660,
       "founded": 1975,
       "industry": "computer software",
@@ -136,7 +136,7 @@
       "isDone": true
     },
     {
-      "name": "alphabet",
+      "name": "alpha",
       "employee_count": 66,
       "founded": 2000,
       "industry": "marketing and advertising",
@@ -462,7 +462,7 @@
       "id": "2cuJB8mZ"
     },
     {
-      "name": "berkshire",
+      "name": "berk",
       "employee_count": 21,
       "founded": 1839,
       "industry": null,
@@ -488,7 +488,7 @@
       "id": "ZN6GZPLQ"
     },
     {
-      "name": "facebook",
+      "name": "meta",
       "employee_count": 132991,
       "founded": 2004,
       "industry": "internet",
@@ -644,7 +644,7 @@
       "id": "Hiw6Q56A"
     },
     {
-      "name": "mastercard",
+      "name": "master",
       "employee_count": 31179,
       "founded": 1966,
       "industry": "information technology and services",
@@ -670,7 +670,7 @@
       "id": "uxHUHUhd"
     },
     {
-      "name": "j.p. morgan",
+      "name": "j.p.",
       "employee_count": 65913,
       "founded": 1799,
       "industry": "financial services",
@@ -748,7 +748,7 @@
       "id": "P6YytSQN"
     },
     {
-      "name": "mcdonald",
+      "name": "mcdon",
       "employee_count": 869,
       "founded": 1955,
       "industry": "building materials",
